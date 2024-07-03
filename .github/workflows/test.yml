@@ -27,7 +27,7 @@ jobs:
       - name: List .sh files
         run: |
           echo "Listing all .sh files in the system:"
-          find / -type f -name "FactoryServer.sh" -print
+          find /home/runner/ -type f -name "FactoryServer.sh" -print
         shell: bash
 
       - name: launch server
