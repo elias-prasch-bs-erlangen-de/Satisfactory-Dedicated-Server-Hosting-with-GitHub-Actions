@@ -18,11 +18,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Setup steamcmd
-        uses: CyberAndrii/setup-steamcmd@v1
+      # - name: Setup steamcmd
+      #   uses: CyberAndrii/setup-steamcmd@v1
       
-      - name: install satisfactory server
-        run: steamcmd +force_install_dir ~/SatisfactoryDedicatedServer +login anonymous +app_update 1690800 -beta public validate +quit
+      # - name: install satisfactory server
+      #   run: steamcmd +force_install_dir ~/SatisfactoryDedicatedServer +login anonymous +app_update 1690800 -beta public validate +quit
 
       # - name: launch server
       #   run: /home/runner/SatisfactoryDedicatedServer/FactoryServer.sh
