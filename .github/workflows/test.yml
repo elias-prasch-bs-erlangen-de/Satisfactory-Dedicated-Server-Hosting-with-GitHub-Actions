@@ -29,11 +29,16 @@ jobs:
 
       - name: find ip
         run: |
-          ip addr
-          curl ifconfig.me
-          echo "Runner IP: $RUNNER_IP"
+          curl ifconfig.co
         shell: bash
 
-      - name: sleep
-        run: sleep 120
+      - name: ping google
+        run: |
+          ping -c 10 8.8.8.8
+          ping -c 10 0.0.0.0
+        shell: bash
+          
+
+      # - name: sleep
+      #   run: sleep 120
       
